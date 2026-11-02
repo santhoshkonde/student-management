@@ -6,5 +6,9 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/about")
+def about():
+    return "<h1>Student Management System</h1><p>GitHub Clone Demo</p>"
+
 if __name__ == "__main__":
     app.run(debug=True)
